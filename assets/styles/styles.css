@@ -214,10 +214,15 @@ section {
 
   .container {
     margin-top: 240px;
+    width: 90%;
   }
 
   .forca img {
     margin-bottom: 56px;
+  }
+
+  .game-buttons div {
+    margin-top: 50px;
   }
 }
 
