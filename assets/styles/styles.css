@@ -7,6 +7,7 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
   background-color: #E5E5E5;
@@ -127,6 +128,72 @@ section {
   margin-right: 30px ;
 }
 
+/* GAME PAGE */
+.container {
+  width: 50%;
+}
+
+.forca {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img{
+    width: 300px;
+    margin-bottom: 80px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-letter {
+  color: #0A3871;
+  font-size: 50px;
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  margin: 0 8px;
+  text-transform: uppercase;
+}
+
+.input-letter::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 8px;
+  background: #0A3871;
+}
+
+.error-container {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 24px;
+  color: #495057;
+  text-transform: uppercase;
+}
+
+.option-input {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 48px;
+  background: transparent;
+  border: 2px #0A3871 solid;
+  color: #0A3871;
+  padding: 0 9px;
+}
+
+.game-buttons div{
+  display: flex;
+  margin-top: 100px;
+}
+
+/* MIDIAS QUERIES */
 @media (max-width: 900px) {
   header {
     top: 75px;
@@ -142,6 +209,16 @@ section {
     max-width: none;
     padding: 200px 40px 40px 40px; 
   }
+
+  /* GAME PAGE */
+
+  .container {
+    margin-top: 240px;
+  }
+
+  .forca img {
+    margin-bottom: 56px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -150,11 +227,30 @@ section {
     left: 16px;
   }
 
-  .buttons-section div {
+  .game-buttons div {
     flex-wrap: wrap;
   }
 
   .new-word.bg-blue{
     margin: 0;
+  }
+
+
+  /* GAME PAGE */
+  .container {
+    margin-top: 140px;
+  }
+  
+  .image-container img {
+    width: 280px;
+  }
+
+  .input-letter {
+    font-size: 48px;
+    width: 50px;
+  }
+  
+  .game-buttons {
+    margin-top: 56px;
   }
 }
