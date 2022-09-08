@@ -131,6 +131,7 @@ section {
 /* GAME PAGE */
 .container {
   width: 50%;
+  margin-top: 100px;
 }
 
 .forca {
@@ -244,10 +245,6 @@ section {
   /* GAME PAGE */
   .container {
     margin-top: 140px;
-  }
-  
-  .image-container img {
-    width: 280px;
   }
 
   .input-letter {
