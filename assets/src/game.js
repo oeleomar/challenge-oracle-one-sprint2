@@ -4,8 +4,6 @@ const resultContainer = document.querySelector("#result-container");
 const imageContainer = document.querySelectorAll('.hidden');
 const words = JSON.parse(localStorage.getItem('data'));
 
-console.log(imageContainer);
-
 let counter = 0;
 const usedLetters = [];
 const errorLetters = [];
@@ -39,9 +37,7 @@ const letterVerify = (letter) => {
 
   usedLetters.push(letter);
   for(let i = 0; i < word.length; i++){
-    console.log('Começei o laço')
     if(letter === word[i]){
-      console.log('Entrei');
       textContainer.childNodes[i + 1].textContent = letter;
       counter ++;
       correctLetters.push(letter);
