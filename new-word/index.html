@@ -7,7 +7,7 @@
   <title>Jogo da Forca || Challenge-Oracle-One</title>
   <link rel="stylesheet" href="../assets/styles/styles.css">
   <link rel="shortcut icon" href="../assets/images/alura-logo.svg" type="image/x-icon">
-
+  
 </head>
 <body>
   <header>
@@ -17,11 +17,11 @@
   </header>
   <main>
     <section>
-      <input type="text" maxlength="8" placeholder="Digite uma palavra ou frase" class="input-text">
+      <input type="text" maxlength="8" id="new-word-input" placeholder="Digite uma palavra ou frase" class="input-text">
       <div class="buttons-section">
         <span>Máx. de 8 letras</span>
         <div>
-          <a href="/" class="new-word bg-blue">Salvar e começar</a>
+          <a href="/game" class="new-word bg-blue" id="save-word">Salvar e começar</a>
           <a href="/" class="new-word bg-white">Cancelar</a>
         </div>
       </div>
@@ -30,7 +30,6 @@
   <footer>
     <p>Criado com ❤️ por <a href="https://www.linkedin.com/in/eleomar-dorneles/">Eleomar Dorneles</a>, acesse o <a href="https://github.com/oeleomar">GitHub</a></p>
   </footer>
-  <script src="../assets/src/index.js"></script>
-  <script src="./script.js"></script>
+  <script type="module" src="../assets/src/new-world.js"></script>
 </body>
 </html>
