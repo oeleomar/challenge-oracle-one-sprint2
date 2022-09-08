@@ -196,6 +196,13 @@ section {
   text-transform: uppercase;
 }
 
+.label {
+  display: none;
+}
+
+.input {
+  display: none;
+}
 
 .game-buttons div{
   display: flex;
@@ -233,6 +240,23 @@ section {
     margin-bottom: 56px;
   }
 
+  .label {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    color: #495057;
+  }
+
+  .input {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    margin: 0px auto;
+    margin-top: 5px;
+  }
+  
   .game-buttons div {
     margin-top: 50px;
   }
