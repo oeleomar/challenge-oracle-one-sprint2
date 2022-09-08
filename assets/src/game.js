@@ -44,13 +44,13 @@ const letterVerify = (letter) => {
     }  
   }
   
-  checkWinner();
   usedLetters.map(val => {
     if(correctLetters.includes(val)) return;
     if(errorLetters.includes(val)) return;
     errorLetters.push(val);
     showIncorrectLetters(val);
   })
+  checkWinner();
 }
 
 const verifyLetter = (letter) => {
