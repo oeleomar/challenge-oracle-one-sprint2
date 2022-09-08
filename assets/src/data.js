@@ -7,4 +7,7 @@ export const data = [
   'HTML',
   'CSS',
   'JAVA',
+  'ADVOGADO',
+  'METEORO',
+  'RITMO'
 ]
