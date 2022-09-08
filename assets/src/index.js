@@ -5,12 +5,11 @@ const dataVerify = () => {
   const localData = localStorage.getItem('data');
   const jsonData = JSON.stringify(data);
   console.log(typeof localData)
-  if(localData === 'null'){
+  if(localData === 'null' || !localData){
     localStorage.setItem('data', jsonData);
+    return;
   }
-  if(localData !== 'null') {
-    localStorage.setItem('data', localData);
-  }
+  localStorage.setItem('data', localData);
 }
 
 dataVerify();

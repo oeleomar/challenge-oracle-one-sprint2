@@ -65,9 +65,7 @@ const checkWinner = () => {
     span.textContent = 'Voce conseguiu, parabens !! 😀😀';
     resultContainer.appendChild(span);
     document.removeEventListener('keydown', initGame);
-  }
-
-  if(errorLetters.length >= 5) {
+  }else if(errorLetters.length >= 5) {
     const span = document.createElement('span');
     span.classList.add('looser');
     span.textContent = 'Voce perdeu, tente novamente. 🥺🥺';
