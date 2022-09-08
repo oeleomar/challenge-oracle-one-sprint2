@@ -1,4 +1,7 @@
 import { data } from './data.js';
+import { dataVerify } from './index.js';
+
+dataVerify();
 
 const button = document.querySelector('#save-word');
 const inputText = document.querySelector('#new-word-input');

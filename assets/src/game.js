@@ -1,3 +1,7 @@
+import { dataVerify } from './index.js';
+
+dataVerify();
+
 const textContainer = document.querySelector("#text-container");
 const errorContainer = document.querySelector("#error-container");
 const resultContainer = document.querySelector("#result-container");
@@ -49,7 +53,9 @@ const letterVerify = (letter) => {
     if(errorLetters.includes(val)) return;
     errorLetters.push(val);
     showIncorrectLetters(val);
+    showImage();
   })
+
   checkWinner();
 }
 
@@ -65,12 +71,14 @@ const checkWinner = () => {
     span.textContent = 'Voce conseguiu, parabens !! 😀😀';
     resultContainer.appendChild(span);
     document.removeEventListener('keydown', initGame);
-  }else if(errorLetters.length >= 5) {
+  }else if(errorLetters.length >= 6) {
+
     const span = document.createElement('span');
     span.classList.add('looser');
     span.textContent = 'Voce perdeu, tente novamente. 🥺🥺';
     resultContainer.appendChild(span);
     document.removeEventListener('keydown', initGame);
+
   }
 }
 
@@ -79,7 +87,7 @@ const showIncorrectLetters = (val) => {
   span.classList.add('errors');
   span.textContent = val;
   errorContainer.appendChild(span);
-  showImage();
+  
 }
 
 const showImage = () => {
@@ -92,3 +100,4 @@ const word = sortWord(words);
 placeLetters(word);
 
 document.addEventListener('keydown', initGame);
+
