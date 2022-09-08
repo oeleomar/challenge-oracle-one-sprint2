@@ -139,9 +139,11 @@ section {
   align-items: center;
 }
 
-.image-container img{
+.image-container {
     width: 300px;
+    height: 355px;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .result-container {

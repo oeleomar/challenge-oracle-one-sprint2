@@ -1,0 +1,60 @@
+.showed {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.hidden {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+}
+
+.base {
+  top: 100%;
+  left: 0;
+}
+
+.haste {
+  top: 0;
+  left: 20%;
+}
+
+.corda {
+  left: 78%;
+}
+
+.topo {
+  left: 20%;
+}
+
+.cabeca {
+  top: 13%;
+  left: 68%;
+}
+
+.tronco {
+  top: 30%;
+  left: 78%;
+}
+
+.rarm {
+  top: 35%;
+  left: 78%;
+}
+
+.larm {
+  top: 35%;
+  left: 67%;
+}
+
+.rleg {
+  top: 67%;
+  left: 78%;
+}
+
+.lleg {
+  top: 67%;
+  left: 67%;
+}

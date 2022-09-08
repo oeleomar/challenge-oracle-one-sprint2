@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jogo da Forca || Challenge-Oracle-One</title>
   <link rel="stylesheet" href="../assets/styles/styles.css">
+  <link rel="stylesheet" href="../assets/styles/forca.css">
   <link rel="shortcut icon" href="../assets/images/alura-logo.svg" type="image/x-icon">
 </head>
 <body>
@@ -18,21 +19,25 @@
     <div class="container">
       <div class="forca">
         <div class="image-container">
-          <img src="../assets/images/forca.svg" alt="Imagem da forca do jogo de palavras.">
+          <img src="../assets/images/forca-parts/base.svg" class="showed base">
+          <img src="../assets/images/forca-parts/haste.svg" class="showed haste">
+          <img src="../assets/images/forca-parts/topo.svg" class="showed topo">
+          <img src="../assets/images/forca-parts/corda.svg" class="showed corda">
+          <img src="../assets/images/forca-parts/cabeca.svg" class="hidden cabeca">
+          <img src="../assets/images/forca-parts/tronco.svg" class="hidden tronco">
+          <img src="../assets/images/forca-parts/Rarm.svg" class="hidden rarm">
+          <img src="../assets/images/forca-parts/Larm.svg" class="hidden larm">
+          <img src="../assets/images/forca-parts/Rleg.svg" class="hidden rleg">
+          <img src="../assets/images/forca-parts/Lleg.svg" class="hidden lleg">
         </div>
-        <div class="result-container">
+        <div class="result-container" id="result-container">
           <!-- <span class="winner">Voce conseguiu, parabens !! 😀😀</span>
           <span class="looser">Voce perdeu, tente novamente. 🥺🥺</span> -->
         </div>
         <div class="text-container" id="text-container">
         </div>
-        <div class="error-container">
-          <span class="errors">a</span>
-          <span class="errors">v</span>
-          <span class="errors">d</span>
-          <span class="errors">b</span>
+        <div class="error-container" id="error-container">
         </div>
-        
       </div>
       <div class=".buttons-section game-buttons">
         <div>
